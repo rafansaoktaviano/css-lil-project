@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  display: flex;
+  background-color: white;
+  max-width: 370px;
+  width: 100%;
+
+  align-items: center;
+  padding: 20px;
+  border-radius: 10%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+}
+
+.image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: #4070f4;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.profile-card .text-data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card .name {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.profile-card {
+    position: relative;
+}
+
+.profile-card::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 36%;
+width: 100%;
+background-color: #4070f4;
+border-radius: 24px 24px 0 0;
+
+}
+.profile-card .jobs {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.profile-card .icon-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.icon-button .link {
+  text-decoration: none;
+  background-color: #4070f4;
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+}
+
+.profile-card .buttons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons .button-text {
+  color: white;
+  background-color: #4070f4;
+  border: none;
+  border-radius: 40px;
+  padding: 8px 24px;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+.buttons .button-text:hover {
+  background-color: #0e4bf1;
+}
+
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.analytics .data {
+  margin-top: 20px;
+  padding: 0 24px;
+  font-weight: 300;
+  font-size: 14;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.data i {
+  font-size: 16px;
+}

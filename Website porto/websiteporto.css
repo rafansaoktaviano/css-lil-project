@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.body {
+  height: auto;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  background: linear-gradient(90deg, #2afadf 10%, #c346c2 100%);
+  align-items: center;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 32px;
+  font-weight: bolder;
+  margin-left: 40px;
+}
+.navbar .list ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+.navbar li a:hover {
+  text-decoration: underline;
+}
+
+.navbar .search-box {
+  max-width: 300px;
+  width: 100%;
+}
+
+.box {
+  position: relative;
+  height: 50px;
+  max-width: 50px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  transition: all 0.5s;
+  margin-right: 40px;
+}
+
+#check:checked ~ .box {
+  max-width: 300px;
+}
+
+.navbar .search-box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+
+.navbar .search-box i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  line-height: 50px;
+  width: 50px;
+  height: 100%;
+  border-radius: 25px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+#check:checked ~ .box i {
+  border-radius: 0 25px 25px 0;
+  color: white;
+  background: linear-gradient(90deg, #2afadf 100%, #c346c2 10%);
+}
+
+#check {
+  display: none;
+}
+.content {
+  padding: 50px;
+  letter-spacing: 2px;
+  width: 70%;
+  margin-top: 80px;
+  line-height: 80px;
+}
+
+.content p {
+  font-size: 27px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+.content .type,
+span {
+  font-size: 27px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.content h1 {
+  font-size: 75px;
+}
+
+.btn {
+  margin: 0px 0 0 100px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #c346c2;
+  color: white;
+  opacity: 80%;
+  border: none;
+  cursor: pointer;
+  border-radius: px;
+  margin: 0 20px;
+}
+
+.rav img {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+}
+.type span {
+  color: #1de2d1;
+}
+.type {
+  animation: typing 7s steps(18) infinite;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #2afadf;
+}
+.content .job {
+  display: flex;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 22ch;
+  }
+  100% {
+    width: 0;
+  }
+}

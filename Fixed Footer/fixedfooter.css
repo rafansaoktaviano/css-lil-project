@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color :white;
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: rgb(20, 22, 172);
+    bottom: 0;
+}
+.container .header a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    border-bottom: 1px solid white;
+}
+
+.container .social-media ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    list-style: none;
+
+
+}
+.container .social-media li{
+margin-left: 10px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 45px;
+font-size: 24px;
+cursor: pointer;
+}
+
+.container  li:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.container  .facebook {
+    background-color: #3b5998;
+}
+.container  .twitter {
+    background-color: #00acee;
+}
+.container .instagram {
+ background-color:  red;
+}
+.container .link {
+    background-color: #0072b1;
+}
+
+.container .youtube {
+    background-color: red;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.content li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+}
+.content .underline {
+position: relative;
+
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.content p::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+}
+
+.content .subscribe {
+    max-width: 300px;
+    width: 100%;
+
+}
+
+.content .button input {
+    display: flex;
+    border-radius: 4px;
+   
+    background-color: rgba(255, 255, 255, .1);
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    color: white;
+    outline: none;
+    border-color: white;
+
+
+}
+.content .button input::placeholder{
+    color: white;
+}
+
+.content input .btn {
+text-align: center;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: rgb(20, 22, 172);
+    border-radius: 4px;
+}
+
+.footer-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: cen;
+    width: 100%;
+    background-color: blue;
+    padding: 30px 50px;
+}
+
+.footer-details a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-details a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 900px) {
+    .content {
+        flex-wrap: wrap;
+
+    }
+
+    .content .underline {
+        margin-top: 10px;
+    }
+    .footer-details p , .footer-details a {
+        font-size: 10px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .content li {
+        font-size: 10px;
+    }
+}
